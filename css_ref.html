@@ -1,0 +1,1729 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Reference</title>
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+    </head>
+    <body>
+      <!-- Header -->
+      <header>
+          <nav class="navbar">
+              <!-- <span class="logo">Ref</span> -->
+              <ul>
+                  <li><a href="./index.html">HOME</a></li>
+                  <li><a href="./html_ref.html">HTML</a></li>
+                  <li><a href="./css_ref.html">CSS</a></li>
+                  <li><a href="#">JS</a></li>
+                  <li><a href="#">CONTACT</a></li>
+              </ul>
+          </nav>
+      </header>
+
+      <section class="index">
+        <h1>CSS Reference</h1>
+
+        <ol>
+            <p>Three ways to use CSS</p>
+            <li><a href="#inline_style">Inline Styles</a></li>
+            <li><a href="#style_tag">The &lt;style&gt; Tag</a></li>
+            <li><a href="#link_css">Linking the CSS File</a></li>
+
+            <p>Selectors</p>
+            <li><a href="#tag_name">Tag Name</a></li>
+            <li><a href="#class_name">Class Name</a></li>
+            <li><a href="#id_name">ID Name</a></li>
+
+            <p>Visual Rules</p>
+            <li><a href="#css_structure">CSS Structure</a></li>
+            <li><a href="#font_family">Font Family</a></li>
+            <li><a href="#font_size">Font Size</a></li>
+            <li><a href="#font_weight">Font Weight</a></li>
+            <li><a href="#text_align">Text Align</a></li>
+            <li><a href="#color">Color</a></li>
+            <li><a href="#opacity">Opacity</a></li>
+            <li><a href="#background_img">Background Image</a></li>
+
+            <p>The Box Model</p>
+            <li><a href="#dimension">Height and Width</a></li>
+            <li><a href="#borders">Borders</a></li>
+            <li><a href="#border_radius">Border Radius</a></li>
+            <li><a href="#padding">Padding</a></li>
+            <li><a href="#margins">Marigns</a></li>
+            <li><a href="#">Auto</a></li>
+            <li><a href="#">Margin Collapse</a></li>
+            <li><a href="#">Minimum and Maximum Height and Width</a></li>
+            <li><a href="#">Overflow</a></li>
+            <li><a href="#resetting_default">Resetting Defaults</a></li>
+            <li><a href="#visibility">Visibility</a></li>
+            <li><a href="#box_sizing">Box sizing property</a></li>
+
+            <p>Display and Positioning</p>
+            <li><a href="#flow_of_html">Flow of HTML</a></li>
+            <li><a href="#position">Position</a></li>
+            <li><a href="#relative_position">Position: Relative</a></li>
+            <li><a href="#absolute_position">Position: Absolute</a></li>
+            <li><a href="#fixed_position">Position: Fixed</a></li>
+            <li><a href="#z_index">Z-Index</a></li>
+            <li><a href="#inline_display">Inline Display</a></li>
+            <li><a href="#block_display">Block Display</a></li>
+            <li><a href="#inline-block_display">Inline-Block Display</a></li>
+            <li><a href="#float">Float</a></li>
+            <li><a href="#clear">Clear</a></li>
+
+            <p>Colors</p>
+            <li><a href="#colors">Color</a></li>
+            <li><a href="#foreground_background">Foreground vs Background</a></li>
+            <li><a href="#hexadecimal">HEX Colors</a></li>
+            <li><a href="#rgb_color">RGB Colors</a></li>
+            <li><a href="#hsl_color">HSL Colors</a></li>
+
+            <p>Typogarphy</p>
+            <li><a href="#typography">Typogarphy</a></li>
+            <li><a href="#t_font_family">Font Family</a></li>
+            <li><a href="#t_font_weight">Font Weight</a></li>
+            <li><a href="#t_font_style">Font Style</a></li>
+            <li><a href="#word_spacing">Word Spacing</a></li>
+            <li><a href="#letter_spacing">Letter Spacing</a></li>
+            <li><a href="#text_transform">Text Transform</a></li>
+            <li><a href="#text_alignment">Text Alignment</a></li>
+            <li><a href="#line_height">Line Height</a></li>
+            <li><a href="#serif">Serif and Sans Serif</a></li>
+            <li><a href="#fallback_fonts">Fallback Fonts</a></li>
+            <li><a href="#linking_fonts">Linking Fonts</a></li>
+            <li><a href="#font_face">Font Face</a></li>
+
+            <p>Grid</p>
+            <li><a href="#create_grid">Creating a Grid</a></li>
+            <li><a href="#create_columns">Creating Columns</a></li>
+            <li><a href="#create_rows">Creating Rows</a></li>
+            <li><a href="#grid_template">Grid Template</a></li>
+            <li><a href="#fraction">Fraction</a></li>
+            <li><a href="#repeat">Repeat</a></li>
+            <li><a href="#minmax">Minmax</a></li>
+            <li><a href="#grid_gap">Grid Gap</a></li>
+            <li><a href="#grid_items">Grid Items</a></li>
+            <li><a href="#multiple_row_items">Multiple Row Items</a></li>
+            <li><a href="#grid_row">Grid Row</a></li>
+            <li><a href="#grid_column">Gird Coulmn</a></li>
+            <li><a href="#grid_area">Grid Area</a></li>
+            <br>
+            <li><a href="#grid_template_areas">Grid Template Areas</a></li>
+            <li><a href="#overlapping_elements">Overlapping Elements</a></li>
+            <li><a href="#justify_items">Justify Items</a></li>
+            <li><a href="#justify_content">Justify Content</a></li>
+            <li><a href="#align_items">Align Items</a></li>
+            <li><a href="#align_content">Align Content</a></li>
+            <li><a href="#justify_self_and_align_self">Justify Self and Aligh Self</a></li>
+            <li><a href="#implicit_vs_explicit_grid">Implict vs Explicit Grid</a></li>
+            <li><a href="#grid_auto_rows_n_columns">Grid Auto Rows and Grid Auto Columns</a></li>
+            <li><a href="#grid_auto_flow">Grid Auto Flow</a></li>
+            <br>
+
+            <li><a href="#examples">Examples</a></li>
+        </ol>
+      </section>
+
+      <main>
+        <!-- Inline Style -->
+        <div id="inline_style">
+            <h2>Inline Style</h2>
+            <p style="color: red; font-size: 20px;">Inline styles are a fast way of styling HTML, but they also have limitations.</p>
+
+            <pre>
+&lt;p style="color: red; font-size: 20px;"&gt;Inline styles are a fast way of styling HTML, but they also have limitations.!&lt;/p&gt;
+            </pre>
+        </div>
+
+        <!-- The Style Tag -->
+        <div class="style_tag">
+            <h2>The &lt;style&gt; Tag</h2>
+
+            <p style="color: blue; font-size: 20px;">HTML allows you to write CSS code in its own dedicated section with the &lt;style&gt; element.</p>
+
+            <pre>
+&lt;head&gt;
+    &lt;style&gt;
+        p {
+            color: blue;
+            font-size: 20px;
+            }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;HTML allows you to write CSS code in its own dedicated section with the &lt;style&gt; element.&lt;/p&gt;
+&lt;/body&gt;
+            </pre>
+        </div>
+
+        <!-- Linking the CSS File-->
+        <div id="link_css">
+            <h2>Linking the CSS File</h2>
+              <p style="color: green; font-family: Arial;">With a CSS file, you can write all the CSS code needed to style a page without sacrificing the readability and maintainability of your HTML file.</p>
+
+            <pre>
+&lt;link href="style.css" type="text/css" rel="stylesheet"&gt;
+...
+&lt;p&gt;With a CSS file, you can write all the CSS code needed to style a page without sacrificing the readability and maintainability of your HTML file.&lt;/p&gt;
+
+In style.css file,
+
+  p {
+    color: green;
+    font-family: Arial;
+  }
+            </pre>
+
+        </div>
+
+        <!-- Selectors -->
+        <h1>Selectors</h1>
+        <p>CSS can select HTML elements by their tag, class, and ID. </p>
+        <br>
+
+        <!-- Tag Name -->
+        <div id="tag_name">
+          <h2>Tag Name</h2>
+          <p>The CSS selector matches the HTML tag for that element, but without the angle brackets.</p>
+
+          <pre>
+p {
+
+}
+          </pre>
+        </div>
+
+        <!-- Class Name -->
+        <div id="class_name">
+          <h2>Class Name</h2>
+          <p>To select an HTML element by its class using CSS, a period (.) must be prepended to the class’s name.</p>
+          <p>CSS classes are meant to be reused over many elements. By writing CSS classes, you can style elements in a variety of ways by mixing classes on HTML elements.</p>
+
+          <pre>
+.class {
+
+}
+          </pre>
+
+          <p><em>Multiple classes</em> We can add multiple classes to an HTML element’s class attribute by separating them with a space. This enables us to mix and match CSS classes to create many unique styles without writing a custom class for every style combination needed.</p>
+        </div>
+
+        <!-- ID Name -->
+        <div id="id_name">
+          <h2>ID Name</h2>
+          <p>If an HTML element needs to be styled uniquely (no matter what classes are applied to the element), we can add an ID to the element.</p>
+          <p>While classes are meant to be used many times, an ID is meant to style only one element.</p>
+          <p>IDs override the styles of tags and classes. </p>
+          <p><em>Specificity</em> IDs are the most specific selector in CSS, followed by classes, and finally, tags.</p>
+          <h6>To make styles easy to edit, it’s best to style with a tag selector, if possible. If not, add a class selector. If that is not specific enough, then consider using an ID selector.</h6>
+
+          <pre>
+#id {
+
+}
+          </pre>
+        </div>
+
+        <!-- ? -->
+        <div>
+          <h2>Chaining Selectors</h2>
+          <p>When writing CSS rules, it’s possible to require an HTML element to have two or more CSS selectors at the same time.</p>
+
+          <pre>
+h1.special {
+
+}
+          </pre>
+
+          <p>The code above would select only the h1 elements that have a class of special.</p>
+        </div>
+
+        <!-- ? -->
+        <div>
+          <h2>Nested Elements</h2>
+          <p> CSS also supports selecting elements that are nested within other HTML elements.</p>
+
+          <pre>
+&lt;ul class='main-list'&gt;
+  &lt;li&gt; ... &lt;/li&gt;
+  &lt;li&gt; ... &lt;/li&gt;
+  &lt;li&gt; ... &lt;/li&gt;
+&lt;/ul&gt;
+
+.main-list li {
+
+}
+          </pre>
+
+          <p>In the example above, .main-list selects the .main-list element (the unordered list element). The nested &lt;li&gt; are selected by adding li to the selector, separated by a space, resulting in .main-list li as the final selector (note the space in the selector).</p>
+          <h6>Adding more than one tag, class, or ID to a CSS selector increases the specificity of the CSS selector.</h6>
+          <h6>The !important flag is only useful when an element appears the same way 100% of the time. Since it’s almost impossible to guarantee that this will be true throughout a project and over time, it’s best to avoid !important altogether. If you ever see !important used (or are ever tempted to use it yourself) we strongly recommend reorganizing your CSS. Making your CSS more flexible will typically fix the immediate problem and make your code more maintainable in the long run</h6>
+
+          <p>To select tag elements with a specific class, chain the class selector to the end of the element selector with no space between:</p>
+          <pre>
+element.class {
+
+}
+          </pre>
+        </div>
+
+        <!-- ? -->
+        <div>
+          <h2>Multiple Selectors</h2>
+          <p>In order to make CSS more concise, it’s possible to add CSS styles to multiple CSS selectors all at once.</p>
+
+          <pre>
+h1, .menu {
+  font-family: Georgia;
+}
+          </pre>
+          <p>we can separate the selectors by a comma to apply the same style to both</p>
+        </div>
+
+        <!-- Visual Rules -->
+        <h1>Visual Rules</h1>
+        <br>
+
+        <!-- CSS Structure -->
+        <div id="css_structure">
+          <h2>CSS Structure</h2>
+          <p>To style an HTML element using CSS, you need to write a CSS declaration inside the body of a CSS selector.</p>
+          <p>CSS declarations consist of a property and a value.</p>
+          <ul>
+            <li>Property — the property you’d like to style of that element (i.e., size, color, etc.).</li>
+            <li>Value — the value of the property (i.e., 18px for size, blue for color, etc.).</li>
+          </ul>
+
+        </div>
+
+        <!-- Font Family -->
+        <div id="font_family">
+          <h2>Font Family</h2>
+          <p>When setting typefaces on a web page, keep the following points in mind:</p>
+          <ol>
+            <li>The font specified in a stylesheet must be installed on a user’s computer in order for that font to display when a user visits the web page.</li>
+            <li>The default typeface for all HTML elements is Times New Roman. You may be familiar with this typeface if you have ever used a formatted word processor. If no font-family attribute is defined, the page will appear in Times New Roman.</li>
+            <li>It’s a good practice to limit the number of typefaces used on a web page to 2 or 3. This helps the page load faster in some cases and is usually a good design decision.</li>
+            <li>When the name of a typeface consists of more than one word, it’s a best practice to enclose the typeface’s name in quotes, like so:</li>
+          </ol>
+
+          <pre>
+h1 {
+  font-family: "Courier New";
+}
+          </pre>
+        </div>
+
+        <!-- Font Size -->
+        <div id="font_size">
+          <h2>Font Size</h2>
+          <p>To change the size of text on your web page, you can use the font-size property.</p>
+
+          <pre>
+p {
+  font-size: 18px;
+}
+          </pre>
+        </div>
+
+        <!-- Font Weight -->
+        <div id="font_weight">
+          <h2>Font Weight</h2>
+          <p>In CSS, the font-weight property controls how bold or thin text appears.</p>
+          <p>The font-weight property's values:</p>
+          <ul>
+            <li>normal (default)</li>
+            <li>bold</li>
+          </ul>
+
+          <pre>
+p {
+  font-weight: bold;
+}
+          </pre>
+        </div>
+
+        <!-- Tedt Align -->
+        <div id="text_align">
+          <h2>Text Align</h2>
+          <p>To align text we can use the text-align property.</p>
+          <p>The text-align property can be set to one of the following three values:</p>
+          <ul>
+            <li>left — aligns text to the left hand side of its parent element, which in this case is the browser.</li>
+            <li>center — centers text inside of its parent element.</li>
+            <li>right — aligns text to the right hand side of its parent element.</li>
+          </ul>
+
+          <pre>
+h1 {
+  text-align: right;
+}
+          </pre>
+        </div>
+
+        <!-- Color -->
+        <div id="color">
+          <h2>Color</h2>
+          <p>Color can affect the following design aspects:</p>
+          <ul>
+            <li>Foreground color: the color that an element appears in</li>
+            <li>Background color: the color that an background appears in</li>
+          </ul>
+
+          <p>In CSS, these two design aspects can be styled with the following two properties:</p>
+          <ul>
+            <li>color: this property styles an element’s foreground color</li>
+            <li>background-color: this property styles an element’s background color</li>
+          </ul>
+
+          <pre>
+h1 {
+  color: red;
+  background-color: blue;
+}
+          </pre>
+        </div>
+
+        <!-- Opacity -->
+        <div id="opacity">
+          <h2>Opacity</h2>
+          <p>Opacity is the measure of how transparent an element is. It’s measured from 0 to 1, with 1 representing 100%, or fully visible and opaque, and 0 representing 0%, or fully invisible.</p>
+
+          <pre>
+.overlay {
+  opacity: 0.5;
+}
+          </pre>
+        </div>
+
+        <!-- Background Image -->
+        <div id="background_img">
+          <h2>Background Image</h2>
+          <p>CSS has the ability to change the background of an element. One option is to make the background of an element an image.</p>
+
+          <pre>
+.main-banner {
+  background-image: url("https://www.example.com/image.jpg");
+}
+          </pre>
+        </div>
+
+        <!-- The Box Model -->
+        <div>
+          <h1>The Box Model</h1>
+          <p>Browsers load HTML elements with default position values. The box model is an important concept to understand how elements are positioned and displayed on a website.</p>
+          <p>All elements on a web page are interpreted by the browser as “living” inside of a box. This is what is meant by the box model.</p>
+
+          <ol>
+            <li>The dimensions of an element’s box.</li>
+            <li>The borders of an element’s box.</li>
+            <li>The paddings of an element’s box.</li>
+            <li>The margins of an element’s box.</li>
+          </ol>
+          <br>
+
+          <p>The box model comprises the set of properties which define parts of an element that take up space on a web page. The model includes the content area’s size (width and height) and the element’s padding, border, and margin. The properties include:</p>
+          <ol>
+            <li>Width and height — specifies the width and height of the content area.</li>
+            <li>Padding — specifies the amount of space between the content area and the border.</li>
+            <li>Border — specifies the thickness and style of the border surrounding the content area and padding.</li>
+            <li>Margin — specifies the amount of space between the border and the outside edge of the element.</li>
+          </ol>
+
+          <!-- visual representation of the box model -->
+          <!-- TODO: fix this -->
+          <div class="box_example">
+            <div class="margin">
+              <p>margin -</p>
+              <div class="border">
+                <p>border -</p>
+                <div class="padding">
+                  <p>padding -</p>
+                  <div class="content">
+                    <p>content -</p>
+                    <p>height x width</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Height and Width -->
+        <div id="dimension">
+          <h2>Height and Width</h2>
+          <p>The CSS height and width properties can be used to modify these default dimensions.</p>
+
+          <pre>
+p {
+  height: 80px;
+  width: 240px;
+}
+          </pre>
+
+          <!-- Minimum and Maximum Height and Width -->
+          <h3>Minimum and Maximum Height and Width</h3>
+          <p>Because a web page can be viewed through displays of differing screen size, the content on the web page can suffer from those changes in size. To avoid this problem, CSS offers two properties that can limit how narrow or how wide an element’s box can be sized to.</p>
+          <ol>
+            <li>min-width — this property ensures a minimum width of an element’s box.</li>
+            <li>max-width — this property ensures a maximum width of an element’s box.</li>
+            <pre>
+p {
+  min-width: 300px;
+  max-width: 600px;
+}
+            </pre>
+
+            <li>min-height — this property ensures a minimum height for an element’s box.</li>
+            <li>max-height — this property ensures a maximum height of an element’s box.</li>
+            <pre>
+p {
+  min-height: 150px;
+  max-height: 300px;
+}
+            </pre>
+          </ol>
+
+          <p>Q: What will happen to the contents of an element’s box if the max-height property is set too low? It’s possible for the content to spill outside of the box, resulting in content that is not legible.</p>
+          <p>- Overflow!</p>
+
+          <!-- Overflow -->
+          <h3>Overflow</h3>
+          <p>The overflow property controls what happens to content that spills, or overflows, outside its box. It can be set to one of the following values:</p>
+          <ol>
+            <li>hidden - when set to this value, any content that overflows will be hidden from view.</li>
+            <li>scroll - when set to this value, a scrollbar will be added to the element’s box so that the rest of the content can be viewed by scrolling.</li>
+            <li>visible - when set to this value, the overflow content will be displayed outside of the containing element. Note, this is the default value.</li>
+          </ol>
+
+          <pre>
+p {
+  overflow: scroll;
+}
+          </pre>
+          <p>In the example above, if any of the paragraph content overflows (perhaps a user resizes their browser window), a scrollbar will appear so that users can view the rest of the content.</p>
+          <p>The overflow property is set on a parent element to instruct a web browser how to render child elements. For example, if a div’s overflow property is set to scroll, all children of this div will display overflowing content with a scroll bar.</p>
+        </div>
+
+        <!-- Borders -->
+        <div id="borders">
+          <h2>Borders</h2>
+          <p>A border is a line that surrounds an element, like a frame around a painting. Borders can be set with a specific width, style, and color.</p>
+          <ol>
+            <li>width — The thickness of the border. A border’s thickness can be set in pixels or with one of the following keywords: thin, medium, or thick.</li>
+            <li>style — The design of the border. Web browsers can render any of 10 different styles. Some of these styles include: none, dotted, and solid</li>
+            <li>color — The color of the border. Web browsers can render colors using a few different formats, including 140 built-in color keywords.</li>
+          </ol>
+
+          <pre>
+p {
+  border: 3px solid coral;
+}
+          </pre>
+
+          <h6>The default border is medium none color, where color is the current color of the element. If width, style, or color are not set in the CSS file, the web browser assigns the default value for that property.</h6>
+        </div>
+
+        <!-- Border Radius -->
+        <div id="border_radius">
+          <h2>Border Radius</h2>
+          <p>You can modify the corners of an element’s border box with the border-radius property.</p>
+
+          <pre>
+div.container {
+  border: 3px solid rgb(22, 77, 100);
+  border-radius: 5px;
+}
+          </pre>
+        </div>
+
+        <!-- Padding -->
+        <div id="padding">
+          <h2>Padding</h2>
+          <p>The space between the contents of a box and the borders of a box is known as padding. The padding property is often used to expand the background color and make content look less cramped.</p>
+
+          <pre>
+p.content-header {
+  border: 3px solid coral;
+  padding: 10px;
+}
+          </pre>
+          <p>The code in this example puts 10 pixels of space between the content of the paragraph (the text) and the borders, on all four sides.</p>
+
+          <p>If you want to be more specific about the amount of padding on each side of a box’s content, you can use the following properties:</p>
+          <ol>
+            <li>padding-top</li>
+            <li>padding-right</li>
+            <li>padding-bottom</li>
+            <li>padding-left</li>
+          </ol>
+
+          <p>Another implementation of the padding property lets you specify exactly how much padding there should be on each side of the content in a single declaration.</p>
+
+          <pre>
+p.content-header {
+  border: 3px solid grey;
+  padding: 6px 11px 4px 9px;
+}
+          </pre>
+
+          <p>However, if the top and bottom values for padding will equal each other, and the left and right values for padding will also equal each other, you can use the following shortcut:</p>
+          <pre>
+p.content-header {
+  padding: 5px 10px;
+}
+          </pre>
+        </div>
+
+        <!-- Margins -->
+        <div id="marings">
+          <h2>Margins</h2>
+          <p>Margin refers to the space directly outside of the box. The margin property is used to specify the size of this space.</p>
+
+          <pre>
+p {
+  border: 1px solid aquamarine;
+  margin: 20px;
+}
+          </pre>
+
+          <p>The code in the example above will place 20 pixels of space on the outside of the paragraph’s box on all four sides. This means that other HTML elements on the page cannot come within 20 pixels of the paragraph’s border.</p>
+          <p>If you want to be even more specific about the amount of margin on each side of a box, you can use the following properties:</p>
+          <ol>
+            <li>margin-top</li>
+            <li>margin-right</li>
+            <li>margin-bottom</li>
+            <li>margin-left</li>
+          </ol>
+
+          <p>A similar implementation of the margin property is used to specify exactly how much margin there should be on each side of the box in a single declaration.</p>
+
+          <pre>
+p {
+  margin: 6px 10px 5px 12px;
+}
+          </pre>
+          <pre>
+p {
+  margin: 6px 12px;
+}
+          </pre>
+
+          <!-- Auto -->
+          <h3>Auto</h3>
+          <p>The margin property also lets you center content. </p>
+
+          <pre>
+div {
+  margin: 0 auto;
+}
+          </pre>
+
+          <p>In the example above, margin: 0 auto; will center the divs in their containing elements. The 0 sets the top and bottom margins to 0 pixels. The auto value instructs the browser to adjust the left and right margins until the element is centered within its containing element.</p>
+          <p>In order to center an element, a width must be set for that element. Otherwise, the width of the div will be automatically set to the full width of its containing element, like the <body>, for example. It’s not possible to center an element that takes up the full width of the page.</p>
+
+          <pre>
+div.headline {
+  width: 400px;
+  margin: 0 auto;
+}
+          </pre>
+
+          <!-- Margin Collapse -->
+          <h3>Margin Collapse</h3>
+          <p>As you have seen, padding is space added inside an element’s border, while margin is space added outside an element’s border. One additional difference is that top and bottom margins, also called vertical margins, collapse, while top and bottom padding does not.</p>
+
+        </div>
+
+        <!-- Resetting Default -->
+        <div id="resetting_default">
+          <h2>Resetting Default</h2>
+          <p>All major web browsers have a default stylesheet they use in the absence of an external stylesheet. These default stylesheets are known as user agent stylesheets. In this case, the term “user agent“ is a technical term for the browser.</p>
+          <p>User agent stylesheets often have default CSS rules that set default values for padding and margin. This affects how the browser displays HTML elements, which can make it difficult for a developer to design or style a web page.</p>
+          <p>Many developers choose to reset these default values so that they can truly work with a clean slate.</p>
+          <pre>
+* {
+  margin: 0;
+  padding: 0;
+}
+          </pre>
+          <p>The code in the example above resets the default margin and padding values of all HTML elements. It is often the first CSS rule in an external stylesheet. Note that both properties are both set to 0. When these properties are set to 0, they do not require a unit of measurement</p>
+        </div>
+        <!-- Visibility -->
+        <div id="visibility">
+          <h2>Visibility</h2>
+          <p>Elements can be hidden from view with the visibility property.</p>
+          <p>The visibility property can be set to one of the following values:</p>
+          <ol>
+            <li>hidden — hides an element.</li>
+            <li>visible — displays an element.</li>
+          </ol>
+
+          <pre>
+.future {
+  visibility: hidden;
+}
+          </pre>
+
+          <h6>Keep in mind, however, that users can still view the contents of the list item (e.g., Donate) by viewing the source code in their browser. Furthermore, the web page will only hide the contents of the element. It will still leave an empty space where the element is intended to display.</h6>
+          <h6>Note: What’s the difference between display: none and visibility: hidden? An element with display: none will be completely removed from the web page. An element with visibility: hidden, however, will not be visible on the web page, but the space reserved for it will.</h6>
+        </div>
+
+
+
+        <!-- New Box Model -->
+        <div id="box_sizing">
+          <h2>Why Change the Box Model?</h2>
+          <p>Under this box model, the border thickness and padding are added to the overall dimensions of the box. This makes it difficult to accurately size a box. Over time, this can also make all of a web page’s content difficult to position and manage.</p>
+          <p>The box-sizing property controls the type of box model the browser should use when interpreting a web page.</p>
+
+          <h3>Box Model: Content-Box</h3>
+          <p>The default value of this property is content-box. This is the same box model that is affected by border thickness and padding.</p>
+          <h5>width + padding + border = actual rendered width of an element's box</h5>
+
+          <h3>Box Model: Border-Box</h3>
+          <p>In this box model, the height and width of the box will remain fixed. The border thickness and padding will be included inside of the box, which means the overall dimensions of the box do not change.</p>
+          <h5>THe width property is the same as the actual rendered width of the element. The content area is automatically sized based on the reamining width, after border and padding has been subtracted.</h5>
+          <pre>
+* {
+  box-sizing: border-box;
+}
+          </pre>
+        </div>
+
+        <!-- Display and Positioning -->
+        <h1>Display and Positioning</h1>
+        <p>In addition to the properties that it provides to style HTML elements, CSS includes properties that change how a browser positions elements. These properties specify where an element is located on a page, if the element can share lines with other elements, and other related attributes.</p>
+        <p>These are the properties for adjusting the position of HTML elements in the browser:</p>
+        <ul>
+          <li>position</li>
+          <li>display</li>
+          <li>z-index</li>
+          <li>float</li>
+          <li>clear</li>
+        </ul>
+
+        <!-- Flow of HTML -->
+        <div id="flow_of_html">
+          <h2>Flow of HTML</h2>
+          <p>A browser will render the elements of an HTML document that has no CSS from left to right, top to bottom, in the same order as they exist in the document. This is called the flow of elements in HTML.</p>
+
+        </div>
+        <!-- Position -->
+        <div id="position">
+          <h2>Position</h2>
+          <p>The default position of an element can be changed by setting its position property. The position property can take one of four values:</p>
+          <ul>
+            <li>static - the default value (it does not need to be specified)</li>
+            <li>relative</li>
+            <li>absolute</li>
+            <li>fixed</li>
+          </ul>
+
+          <!-- Example -->
+          <p>Take a look at the block-level elements in the image below:</p>
+          <div class="boxes a"></div>
+          <div class="boxes b"></div>
+
+          <p>Block-level elements like these boxes create a block the full width of their parent elements, and they prevent other elements from appearing in the same horizontal space. The boxes in the image above were created with the following code:</p>
+          <pre>
+.boxes {
+  width: 120px;
+  height: 70px;
+}
+&lt;div class="boxes"&gt;&lt;/div&gt;
+&lt;div class="boxes"&gt;&lt;/div&gt;
+          </pre>
+          <p>Notice the block-level elements in the image above take up their own line of space and therefore don’t overlap each other. In the browser to the right you can see block-level elements also consistently appear on the left side of the browser. This is the default position for block-level elements.</p>
+
+          <!-- Position: Relative -->
+          <div id="relative_position">
+            <h3>Posiotion: Relative</h3>
+            <p>This value allows you to position an element relative to its default static position on the web page.</p>
+            <p>The valid offset properties are:</p>
+            <ul>
+              <li>top - moves the element down.</li>
+              <li>bottom - moves the element up.</li>
+              <li>left - moves the element right.</li>
+              <li>right - moves the element left.</li>
+            </ul>
+
+            <div class="boxes a"></div>
+            <div class="boxes c"></div>
+            <pre>
+
+.box-bottom {
+  background-color: DeepSkyBlue;
+  position: relative;
+  top: 20px;
+  left: 50px;
+}
+            </pre>
+          </div>
+
+          <!-- Position: Absolute -->
+          <div id="absolute_position">
+            <h3>Position: Absolute</h3>
+            <p>When an element’s position is set to absolute all other elements on the page will ignore the element and act like it is not present on the page. The element will be positioned relative to its closest positioned parent element.</p>
+
+            <div class="boxes a"></div>
+            <div class="boxes d"></div>
+          </div>
+
+          <!-- Position: Fixed -->
+          <div id="fixed_position">
+            <h3>Position: Fixed</h3>
+            <p>When an element’s position is set to absolute, as in the last exercise, the element will scroll with the rest of the document when a user scrolls. We can fix an element to a specific position on the page (regardless of user scrolling) by setting its position to fixed.</p>
+
+            <pre>
+  .box-bottom {
+    background-color: DeepSkyBlue;
+    position: fixed;
+    top: 20px;
+    left: 50px;
+  }
+            </pre>
+            <h6>This technique is often used for navigation bars on a web page.</h6>
+          </div>
+        </div>
+
+        <!-- Z-Index -->
+        <div id="z_index">
+          <h2>Z-Index</h2>
+          <p>The z-index property controls how far “back” or how far “forward” an element should appear on the web page when elements overlap. This can be thought of the depth of elements, with deeper elements appearing behind shallower elements.</p>
+
+          <pre>
+.box-top {
+  background-color: Aquamarine;
+  position: relative;
+  z-index: 2;
+}
+
+.box-bottom {
+  background-color: DeepSkyBlue;
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  z-index: 1;
+}
+          </pre>
+        </div>
+
+        <!-- Display Property -->
+        <div id="display_property">
+          <h2>Display Property</h2>
+          <p>Every HTML element has a default display value that dictates if it can share horizontal space with other elements. Some elements fill the entire browser from left to right regardless of the size of their content. Other elements only take up as much horizontal space as their content requires and can be directly next to other elements.</p>
+          <ul>
+            <li>inline</li>
+            <li>block</li>
+            <li>inline-block</li>
+          </ul>
+
+          <!-- Inline Display -->
+          <div id="inline_display">
+            <h3>Inline Display</h3>
+            <p>The default display for some tags, such as &lt;em&gt;, &lt;strong&gt;, and &lt;a&gt;, is called inline. Inline elements have a box that wraps tightly around their content, only taking up the amount of space necessary to display their content and not requiring a new line after each element. The height and width of these elements cannot be specified in the CSS document. For example, the text of an anchor tag (&lt;a&gt;) will, by default, be displayed on the same line as the surrounding text, and it will only be as wide as necessary to contain its content. inline elements cannot be altered in size with the height or width CSS properties.</p>
+
+            <p>To learn more about <em>inline</em> elements, read <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements">MDN documentation</a></p>
+
+            <pre>
+To learn more about &lt;em&gt;inline&lt;/em&gt; elements, read &lt;a href="#"&gt;MDN documentation&lt;/a&gt;
+            </pre>
+            <p>In the example above, the &lt;em&gt; element is inline, because it displays its content on the same line as the content surrounding it, including the anchor tag.</p>
+          </div>
+
+          <!-- Block Display -->
+          <div id="block_display">
+            <h3>Block Display</h3>
+            <p>Some elements are not displayed in the same line as the content around them. These are called block-level elements. These elements fill the entire width of the page by default, but their width property can also be set. Unless otherwise specified, they are the height necessary to accommodate their content.</p>
+            <p>Elements that are block-level by default include all levels of heading elements (&lt;h1&gt; through &lt;h6&gt;), &lt;p&gt;, &lt;div&gt; and &lt;footer&gt;.</p>
+
+            <pre>
+strong {
+  display: block;
+}
+            </pre>
+          </div>
+
+          <!-- Inline-Block Display -->
+          <div id="inline-block_display">
+            <h3>Inline-Block Display</h3>
+            <p>The third value for the display property is inline-block. Inline-block display combines features of both inline and block elements. Inline-block elements can appear next to each other and we can specify their dimensions using the width and height properties. Images are the best example of default inline-block elements.</p>
+
+            <!-- example -->
+            <div class="rectangle">
+              <p>I’m a rectangle!</p>
+            </div>
+            <div class="rectangle">
+              <p>So am I!</p>
+            </div>
+            <div class="rectangle">
+              <p>Me three!</p>
+            </div>
+
+            <pre>
+&lt;div class="rectangle"&gt;
+  &lt;p&gt;I’m a rectangle!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="rectangle"&gt;
+  &lt;p&gt;So am I!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="rectangle"&gt;
+  &lt;p&gt;Me three!&lt;/p&gt;
+&lt;/div&gt;
+
+.rectangle {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  border: 1px solid red;
+}
+            </pre>
+          </div>
+
+        </div>
+
+        <!-- Float -->
+        <div id="float">
+          <h2>Float</h2>
+          <p>If you’re simply interested in moving an element as far left or as far right as possible on the page, you can use the float property.</p>
+          <p>The float property can be set to one of two values:</p>
+          <ol>
+            <li>left - this value will move, or float, elements as far left as possible.</li>
+            <li>right - this value will move elements as far right as possible.</li>
+          </ol>
+          <p>Floated elements must have a width specified, as in the example above. Otherwise, the element will assume the full width of its containing element, and changing the float value will not yield any visible results.</p>
+
+          <div class="boxes a"></div>
+          <div class="boxes e"></div>
+
+          <pre>
+.boxes {
+  width: 120px;
+  height: 70px;
+}
+
+.box-bottom {
+  background-color: DeepSkyBlue;
+  float: right;
+}
+          </pre>
+        </div>
+
+        <!-- Clear -->
+        <div id="clear">
+          <h2>Clear</h2>
+          <p>The float property can also be used to float multiple elements at once. However, when multiple floated elements have different heights, it can affect their layout on the page. Specifically, elements can “bump” into each other and not allow other elements to properly move to the left or right.</p>
+          <p>The clear property specifies how elements should behave when they bump into each other on the page. It can take on one of the following values:</p>
+          <ol>
+            <li>left — the left side of the element will not touch any other element within the same containing element.</li>
+            <li>right — the right side of the element will not touch any other element within the same containing element.</li>
+            <li>both — neither side of the element will touch any other element within the same containing element.</li>
+            <li>none — the element can touch either side.</li>
+          </ol>
+        </div>
+
+
+        <!-- Colors -->
+        <div id="colors">
+          <h1>Color</h1>
+          <p>CSS supports a wide variety of colors. Colors in CSS can be described in three different ways:</p>
+          <ul>
+            <li>Named colors — English words that describe colors, also called keyword colors</li>
+            <li>RGB — numeric values that describe a mix of red, green, and blue</li>
+            <li>HSL — numeric values that describe a mix of hue, saturation, and lightness</li>
+          </ul>
+        </div>
+
+        <!-- Foreground vs Background -->
+        <div id="foreground_background">
+          <h2>Foreground vs Background</h2>
+          <p>Foreground color is the color that an element appears in. For example, when a heading is styled to appear green, the foreground color of the heading has been styled. Conversely, when a heading is styled so that its background appears yellow, the background color of the heading has been styled</p>
+          <p>In CSS, these two design aspects can be styled with the following two properties:</p>
+
+          <ul>
+            <li>color - this property styles an element’s foreground color.</li>
+            <li>background-color - this property styles an element’s background color.</li>
+          </ul>
+
+          <h1 style="color: Green; background-color: Yellow;">In this example, the text of the heading will appear in green, and the background of the heading will appear yellow.</h1>
+          <pre>
+h1 {
+  color: Green;
+  background-color: Yellow;
+}
+          </pre>
+        </div>
+
+        <!-- Hexadecimal -->
+        <div id="hexadecimal">
+          <h2>Hexadecimal</h2>
+          <p>One syntax that we can use to specify colors is called hexadecimal. Colors specified using this system are called hex colors. A hex color begins with a hash character (#) which is followed by three or six characters. The characters represent values for red, blue and green.</p>
+
+          <pre>
+DarkSeaGreen: #8FBC8F
+Sienna:       #A0522D
+SaddleBrown:  #8B4513
+Brown:        #A52A2A
+Black:        #000000 or #000
+White:        #FFFFFF or #FFF
+Aqua:         #00FFFF or #0FF
+          </pre>
+        </div>
+
+        <!-- RGB Colors -->
+        <div id="rgb_color">
+          <h2>RGB Colors</h2>
+          <p>Syntax for representing RGB values that uses decimal numbers. Each of the three values represents a color component, and each can have a decimal number value from 0 to 255. The first number represents the amount of red, the second is green, and the third is blue. These colors are exactly the same as hex, but with a different syntax and a different number system.</p>
+
+          <pre>
+h1 {
+  color: rgb(23, 45, 23);
+}
+          </pre>
+
+          <h6>The hexadecimal and RGB color system can represent many more colors than the small set of CSS named colors</h6>
+        </div>
+
+        <!-- HSL Colors -->
+        <div class="hsl_color">
+          <h2>HSL Colors</h2>
+          <h3>Hue, Saturation, and Lightness</h3>
+          <p>The syntax for HSL is similar to the decimal form of RGB, though it differs in important ways. The first number represents the degree of the hue, and can be between 0 and 360. The second and third numbers are percentages representing saturation and lightness respectively.</p>
+          <p>Hue is the first number. It refers to an angle on a color wheel. Red is 0 degrees, Green is 120 degrees, Blue is 240 degrees, and then back to Red at 360.</p>
+          <p>Saturation refers to the intensity or purity of the color. If you imagine a line segment drawn from the center of the color wheel to the perimeter, the saturation is a point on that line segment. If you spin that line segment to different angles, you’ll see how that saturation looks for different hues. The saturation increases towards 100% as the point gets closer to the edge (the color becomes more rich). The saturation decreases towards 0% as the point gets closer to the center (the color becomes more gray).</p>
+          <p>Lightness refers to how light or dark the color is. Halfway, or 50%, is normal lightness. Imagine a sliding dimmer on a light switch that starts halfway. Sliding the dimmer up towards 100% makes the color lighter, closer to white. Sliding the dimmer down towards 0% makes the color darker, closer to black.</p>
+          <p>HSL is convenient for adjusting colors. In RGB, making the color a little darker may affect all three color components. In HSL, that’s as easy as changing the lightness value. HSL is also useful for making a set of colors that work well together by selecting various colors that have the same lightness and saturation but different hues.</p>
+
+          <pre>
+color: hsl(120, 60%, 70%);
+          </pre>
+
+          <!-- Opacity and Alpha -->
+          <h3>Opacity and Alpha</h3>
+          <p>All of the colors we’ve seen so far have been opaque, or non-transparent. When we overlap two opaque elements, nothing from the bottom element shows through the top element. In this exercise, we’ll change the opacity, or the amount of transparency, of some colors so that some or all of the bottom elements are visible through a covering element.</p>
+          <p>Alpha is a decimal number from zero to one. If alpha is zero, the color will be completely transparent. If alpha is one, the color will be opaque. The value for half transparent would be 0.5. You can think of the alpha value as, “the amount of the background to mix with the foreground”. When a color’s alpha is below one, any color behind it will be blended in. The blending happens for each pixel; no blurring occurs.</p>
+
+          <pre>
+color: hsla(34, 100%, 50%, 0.1);
+color: rgba(234, 45, 98, 0.33);
+color: transparent;
+          </pre>
+        </div>
+
+        <!-- Typogarphy -->
+        <h1>Typogarphy</h1>
+        <p>The art of arranging text on a page.</p>
+
+        <!-- Font Family -->
+        <div id="t_font_family">
+          <h2>Font Family</h2>
+          <p>The phrase “type of font” refers to the technical term typeface, or font family.</p>
+          <ol>
+            <p>When setting typefaces on a web page, keep the following points in mind:</p>
+            <li>The font specified in a stylesheet must be installed on a user’s computer in order for that font to display when a user visit the web page. We’ll learn how to work around this issue in a later exercise.</li>
+            <li>You’ve probably noticed that we haven’t been specifying a typeface in previous exercises of this course. How exactly does the browser know what typeface to use when displaying the web page? The default typeface for all most browsers is Times New Roman. You may be familiar with this typeface if you have ever used a formatted word processor.</li>
+            <li>It’s a good practice to limit the number of typefaces used on a web page to 2 or 3.</li>
+            <li>When the name of a typeface consists of more than one word, it must be enclosed in double quotes (otherwise it will not be recognized).</li>
+          </ol>
+
+          <pre>
+h1 {
+  font-family: Garamond;
+}
+          </pre>
+        </div>
+
+        <!-- Font Weight -->
+        <div id="t_font_weight">
+          <h2>Font Weight</h2>
+          <p>Style bold text with the font-weight property. By default, the font-weight of most text elements is set to normal</p>
+
+          <pre>
+p {
+  font-weight: bold;
+}
+          </pre>
+
+          <p>The font-weight property can also be assigned a number value to style text on a numeric scale ranging from 100 to 900.</p>
+          <p>When using numeric weights, there are a number of default font weights that we can use:</p>
+          <ol>
+            <li>400 is the default font-weight of most text</li>
+            <li>700 signifies a bold font-weight.</li>
+            <li>300 signifies a light font-weight.</li>
+          </ol>
+
+          <pre>
+header {
+  font-weight: 800;
+}
+
+footer {
+  font-weight: 200;
+}
+          </pre>
+        </div>
+
+        <!-- Font Style -->
+        <div id="t_font_style">
+          <h2>Font Style</h2>
+          <p>You can also italicize text with the font-style property. The font-style property also has a normal value which is the default.</p>
+
+          <pre>
+h3 {
+  font-style: italic;
+}
+          </pre>
+        </div>
+
+        <!-- Word Spacing -->
+        <div id="word_spacing">
+          <h2>Word Spacing</h2>
+          <p>You can also increase the spacing between words in a body of text, technically known as word spacing. The default amount of space between words is usually 0.25em. It’s not common to increase the spacing between words, but it may help enhance the readability of bolded or enlarged text. Note, again, that the preferred unit is ems.</p>
+
+          <pre>
+h1 {
+  word-spacing: 0.3em;
+}
+          </pre>
+        </div>
+
+        <!-- Letter Spacing -->
+        <div id="letter_spacing">
+          <h2>Letter Spacing</h2>
+          <p>The technical term for adjusting the spacing between letters is called tracking. Tracking can be adjusted with the letter-spacing property in CSS. Like word spacing, it’s not common to increase the tracking in text, but sometimes it enhances the readability of uppercase text.</p>
+
+          <pre>
+h1 {
+  letter-spacing: 0.3em;
+}
+          </pre>
+        </div>
+
+        <!-- Text Transform -->
+        <div id="text_transform">
+          <h2>Text Transform</h2>
+          <p>Text can also be styled to appear in either all uppercase or lowercase with the text-transform property.</p>
+
+          <pre>
+h1 {
+  text-transform: uppercase;
+}
+          </pre>
+        </div>
+
+        <!-- Text Alignment -->
+        <div id="text_alignment">
+          <h2>Text Alignment</h2>
+          <p>To move, or align, text, we can use the text-align property.</p>
+
+          <pre>
+h1 {
+  text-align: right;
+}
+          </pre>
+
+          <p>The text-align property can be set to one of the following three values:</p>
+          <ol>
+            <li>left - aligns text to the left hand side of the browser.</li>
+            <li>center - centers text.</li>
+            <li>right - aligns text to the right hand side of the browser.</li>
+          </ol>
+        </div>
+
+        <!-- Line Height -->
+        <div id="Line Height">
+          <h2>Line Height</h2>
+          <p>We often modify line-height to make text on a web page easier to read. When text is styled to appear larger, the vertical spacing between lines of text can decrease, creating text that is difficult to read, particularly in paragraphs.</p>
+          <p>We can use the line-height property to set how tall we want the line containing our text to be, regardless of the height of the text. Line heights can take one of several values:</p>
+          <ol>
+            <li>A unitless number, such as 1.2. This number is an absolute value that will compute the line height as a ratio of the font size.</li>
+            <li>A number specified by unit, such as 12px. This number can be any valid CSS unit, such as pixels, percents, ems, or rems.</li>
+          </ol>
+          <p>Generally, the unitless ratio value is the preferred method, since it is responsive and based exclusively on the current font size. In other words, if we change the font size, a unitless line-height would automatically readjust, whereas the pixel value would remain static.</p>
+
+          <p>line-height property modifies the leading of text.</p>
+          <h5>image...</h5>
+
+          <pre>
+p {
+  line-height: 1.4;
+}
+          </pre>
+        </div>
+
+        <!-- Serif and Sans Serif -->
+        <div id="Serif and Sans Serif">
+          <h2>Serif and Sans Serif</h2>
+          <ol>
+            <li>Serif — fonts that have extra details on the ends of each letter. Examples include fonts like Times New Roman or Georgia, among others.</li>
+            <li>Sans-Serif — fonts that do not have extra details on the ends of each letter. Instead, letters have straight, flat edges, like Arial or Helvetica.</li>
+          </ol>
+        </div>
+
+        <!-- Fallback Fonts -->
+        <div id="fallback_fonts">
+          <h2>Fallback Fonts</h2>
+          <p>Most computers have a small set of typefaces pre-installed. This small set includes serif fonts like Times New Roman and sans-serif fonts like Arial. These pre-installed fonts serve as fallback fonts if the stylesheet specifies a font which is not installed on a user’s computer.</p>
+
+          <pre>
+h1 {
+  font-family: "Garamond", "Times", serif;
+}
+          </pre>
+        </div>
+
+        <!-- Linking Fonts -->
+        <div id="linking_fonts">
+          <h2>Linking Fonts</h2>
+          <p>With the number of fonts available with modern typography, it is unrealistic to expect users to have all fonts installed on their computers. New fonts are often centralized in directories made available for public use. We refer to these fonts as non-user fonts.</p>
+          <p>Google Fonts is one such directory of thousands of open-source fonts, available for free use. Google Fonts gives us a way to retrieve the link for a single font, multiple fonts, or multiple fonts with the font-weight and font-style properties.</p>
+
+          <pre>
+&lt;head&gt;
+  &lt;link href="https://fonts.googleapis.com/css?family=Droid+Serif" type="text/css" rel="stylesheet"&gt;
+&lt;/head&gt;
+          </pre>
+        </div>
+
+        <!-- Font Face -->
+        <div id="font_face">
+          <h2>Font Face</h2>
+          <p>There are other ways to link non-user fonts that don’t require the use of the <link> tag in the HTML document. CSS offers a way to import fonts directly into stylesheets with the @font-face property.</p>
+
+          <pre>
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Space Mono'), local('SpaceMono-Regular'), url(https://fonts.gstatic.com/s/spacemono/v1/adVweg3BJhE6r8jYmXseHQzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+          </pre>
+
+          <p>We can modify our @font-face rule to use local font files as well. We can supply the user with the desired font family and host it along with our site instead of depending on a different site.</p>
+        </div>
+
+        <!-- Grid -->
+        <h1>Grid</h1>
+        <p>Using CSS, you can elegantly lay out elements on a web page. There is no simple answer for how best to do this — depending on what content you are trying to display, multiple different techniques can work well. </p>
+        <ul>
+          <li>Box Model</li>
+          <li>Flexbox: mostly useful for positioning items in a one-dimensional layout.</li>
+          <li>CSS display and positioning</li>
+          <li>CSS Grid: most useful for two-dimensional layouts, providing many tools for aligning and moving elements across both rows and columns.</li>
+        </ul>
+
+        <!-- Creating a Grid -->
+        <div id="create_grid">
+          <h2>Creating a Grid</h2>
+          <p>To set up a grid, you need to have both a grid container and grid items. The grid container will be a parent element that contains grid items as children and applies overarching styling and positioning to them.</p>
+
+          <ul>
+            <li>grid (for a block-level grid)</li>
+            <li>inline-grid (for an inline grid)</li>
+          </ul>
+          <pre>
+.grid {
+  display: grid;
+}
+          </pre>
+        </div>
+
+        <!-- Creating Columns -->
+        <div id="create_columns">
+          <h2>Creating Columns</h2>
+          <p>By default, grids contain only one column. If you were to start adding items, each item would be put on a new row; that’s not much of a grid! To change this, we need to explicitly define the number of rows and columns in our grid.</p>
+
+          <pre>
+.grid {
+  display: grid;
+  width: 500px;
+  grid-template-columns: 100px 200px;
+}
+
+.grid {
+  display: grid;
+  width: 1000px;
+  grid-template-columns: 20% 50%;
+}
+          </pre>
+        </div>
+
+        <!-- Creating Rows -->
+        <div id="create_rows">
+          <h2>Creating Rows</h2>
+          <p>To specify the number and size of the rows, we are going to use the property grid-template-rows.</p>
+
+          <pre>
+.grid {
+  display: grid;
+  width: 1000px;
+  height: 500px;
+  grid-template-columns: 100px 200px;
+  grid-template-rows: 10% 20% 600px;
+}
+          </pre>
+        </div>
+
+        <!-- Grid Template -->
+        <div id="grid_template">
+          <h2>Grid Template</h2>
+          <p>The property grid-template can replace the previous two CSS properties.</p>
+
+          <pre>
+.grid {
+  display: grid;
+  width: 1000px;
+  height: 500px;
+  grid-template: 200px 300px / 20% 10% 70%;
+}
+          </pre>
+        </div>
+
+        <!-- Fraction -->
+        <div id="fraction">
+          <h2>Fraction</h2>
+          <p>CSS Grid introduced a new relative sizing unit — fr, like fraction.</p>
+          <p>By using the fr unit, we can define the size of columns and rows as a fraction of the grid’s length and width. This unit was specifically created for use in CSS Grid. Using fr makes it easier to prevent grid items from overflowing the boundaries of the grid.</p>
+
+          <pre>
+.grid {
+  display: grid;
+  width: 1000px;
+  height: 400px;
+  grid-template: 2fr 1fr 1fr / 1fr 3fr 1fr;
+}
+          </pre>
+
+          <p>It is possible to use fr with other units as well. When this happens, each fr represents a fraction of the available space.</p>
+
+          <pre>
+.grid {
+  display: grid;
+  width: 100px;
+  grid-template-columns: 1fr 60px 1fr;
+}
+          </pre>
+
+          <p>In this example, 60 pixels are taken up by the second column. Therefore the first and third columns have 40 available to split between them. Since each gets one fraction of the total, they both end up being 20 pixels wide.</p>
+        </div>
+
+        <!-- Repeat -->
+        <div id="repeat">
+          <h2>Repeat</h2>
+          <p>The properties that define the number of rows and columns in a grid can take a function as a value. repeat() is one of these functions. The repeat() function was created specifically for CSS Grid.</p>
+
+          <pre>
+.grid {
+  display: grid;
+  width: 300px;
+  grid-template-columns: repeat(3, 100px);
+}
+
+grid-template-columns: repeat(2, 20px 50px)
+          </pre>
+        </div>
+
+        <!-- minmax -->
+        <div id="minmax">
+          <h2>minmax</h2>
+          <p>sometimes you might want a grid to resize based on the size of your web browser. In these situations, you might want to prevent a row or column from getting too big or too small. For example, if you have a 100-pixel wide image in your grid, you probably don’t want its column to get thinner than 100 pixels! The minmax() function can help us solve this problem.</p>
+
+          <pre>
+.grid {
+  display: grid;
+  grid-template-columns: 100px minmax(100px, 500px) 100px;
+}
+          </pre>
+
+          <p>In this example, the first and third columns will always be 100 pixels wide, no matter the size of the grid. The second column, however, will vary in size as the overall grid resizes. The second column will always be between 100 and 500 pixels wide.</p>
+        </div>
+
+        <!-- Grid Gap -->
+        <div id="grid_gap">
+          <h2>Grid Gap</h2>
+          <p>The CSS properties grid-row-gap and grid-column-gap will put blank space between every row and column in the grid.</p>
+
+          <pre>
+.grid {
+  display: grid;
+  width: 320px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+}
+          </pre>
+
+          <p>It is important to note that grid-gap does not add space at the beginning or end of the grid. In the example code, our grid will have three columns with two ten-pixel gaps between them. Let’s quickly calculate how wide these columns are. Remember that using fr considers all of the available space. The grid is 320 pixels wide and 20 of those pixels are taken up by the two grid gaps. Therefore each column takes a piece of the 300 available pixels. Each column gets 1fr, so the columns are evenly divided into thirds (or 100 pixels each).</p>
+        </div>
+
+        <!-- Grid Items -->
+        <div id='grid_items'>
+          <h2>Grid Items</h2>
+          <p>How to size of the grid items and where they are displayed on the page.</p>
+
+          <!-- Multiple Row Items -->
+          <div id="multiple_row_items">
+            <h3>Multiple Row Items</h3>
+            <p>Using the CSS properties grid-row-start and grid-row-end, we can make single grid items take up multiple rows.</p>
+
+            <pre>
+.item {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+            </pre>
+          </div>
+
+          <!-- Grid Row -->
+          <div id="grid_row">
+            <h3>Grid Row</h3>
+            <p>We can use the property grid-row as shorthand for grid-row-start and grid-row-end.</p>
+
+            <pre>
+.item {
+  grid-row-start: 4;
+  grid-row-end: 6;
+}
+
+.item {
+  grid-row: 4 / 6;
+}
+            </pre>
+          </div>
+
+          <!-- Grid Coulmn -->
+          <div id="grid_column">
+            <h3>Grid Column</h3>
+            <p>grid-column-start, grid-column-end and grid-column work identically to the row properties. These properties allow a grid item to span multiple columns.</p>
+            <p>When using these properties, we can use the keyword span to start or end a column or row relative to its other end. Look at how span is used in the code below:</p>
+
+            <pre>
+.item {
+  grid-column: 4 / span 2;
+}
+
+.item {
+  grid-column: 4 / 6;
+}
+            </pre>
+
+          </div>
+
+          <!-- Grid Area -->
+          <div id='grid_area'>
+            <h3>Grid Area</h3>
+            <p>This property will set the starting and ending positions for both the rows and columns of an item.</p>
+
+            <pre>
+.item {
+  grid-area: 2 / 3 / 4 / span 5;
+}
+            </pre>
+            <p>grid-row-start / grid-column-start / grid-row-end / grid-column-end</p>
+          </div>
+
+        </div>
+
+        <!-- Grid Template Areas -->
+        <div id="grid_template_areas">
+          <h2>Grid Templating Areas</h2>
+          <p>The grid-template-areas property allows you to name sections of your web page to use as values in the grid-row-start, grid-row-end, grid-col-start,grid-col-end, and grid-area properties.</p>
+
+          <pre>
+&lt;div class="container"&gt;
+  &lt;header&gt;Welcome!&lt;/header&gt;
+  &lt;nav&gt;Links!&lt;/nav&gt;
+  &lt;section class="info"&gt;Info!&lt;/section&gt;
+  &lt;section class="services"&gt;Services!&lt;/section&gt;
+  &lt;footer&gt;Contact us!&lt;/footer&gt;
+&lt;/div&gt;
+
+
+.container {
+  display: grid;
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+  grid-template-areas: "head head"
+                       "nav nav"
+                       "info services"
+                       "footer footer";
+  grid-template-rows: 300px 120px 800px 120px;
+  grid-template-columns: 1fr 3fr;
+}
+
+header {
+  grid-area: head;
+}
+
+nav {
+  grid-area: nav;
+}
+
+.info {
+  grid-area: info;
+}
+
+.services {
+  grid-area: services;
+}
+
+footer {
+  grid-area: footer;
+}
+          </pre>
+        </div>
+
+        <!-- Overlapping Elements -->
+        <div id="overlapping_elements">
+          <h2>Overlapping Elements</h2>
+          <p>When overlapping elements, it is generally easiest to use grid line names and the grid-area property.</p>
+
+          <pre>
+&lt;div class="container"&gt;
+  &lt;div class="info"&gt;Info!&lt;/div&gt;
+  &lt;img src="#" /&gt;
+  &lt;div class="services"&gt;Services!&lt;/div&gt;
+&lt;/div&gt;
+
+.container {
+  display: grid;
+  grid-template: repeat(8, 200px) / repeat(6, 100px);
+}
+
+.info {
+  grid-area: 1 / 1 / 9 / 4;
+}
+
+.services {
+  grid-area: 1 / 4 / 9 / 7;
+}
+
+img {
+  grid-area: 2 / 3 / 5 / 5;
+  z-index: 5;
+}
+          </pre>
+        </div>
+        <!-- Justify Items -->
+        <div id="justify_items">
+          <h2>Justify Items</h2>
+          <p>There are two axes in a grid layout — the column (or block) axis and the row (or inline) axis.</p>
+          <p>The column axis stretches from top to bottom across the web page.</p>
+          <p>The row axis stretches from left to right across the web page.</p>
+          <p>justify-items is a property that positions grid items along the inline, or row, axis. This means that it positions items from left to right across the web page.</p>
+
+          <p>justify-items accepts these values:</p>
+          <ul>
+            <li>start — aligns grid items to the left side of the grid area</li>
+            <li>end — aligns grid items to the right side of the grid area</li>
+            <li>center — aligns grid items to the center of the grid area</li>
+            <li>stretch — stretches all items to fill the grid area</li>
+          </ul>
+
+        </div>
+
+        <!-- Justify Content -->
+        <div id="justify_content">
+          <h2>Justify Content</h2>
+          <p>How to position a grid within its parent element</p>
+          <p>We can use justify-content to position the entire grid along the row axis.</p>
+          <p>It accepts these values:</p>
+          <ul>
+            <li>start — aligns the grid to the left side of the grid container</li>
+            <li>end — aligns the grid to the right side of the grid container</li>
+            <li>center — centers the grid horizontally in the grid container</li>
+            <li>stretches the grid items to increase the size of the grid to expand horizontally across the container</li>
+            <li>space-around — includes an equal amount of space on each side of a grid element, resulting in double the amount of space between elements as there is before the first and after the last element</li>
+            <li>space-between — includes an equal amount of space between grid items and no space at either end</li>
+            <li>space-evenly — places an even amount of space between grid items and at either end</li>
+          </ul>
+
+          <pre>
+main {
+  display: grid;
+  width: 1000px;
+  grid-template-columns: 300px 300px;
+  grid-template-areas: "left right";
+  justify-content: center;
+}
+          </pre>
+        </div>
+
+        <!-- Align Items -->
+        <div id="align_items">
+          <h2>Align Items</h2>
+          <ul>
+            <li>Justify Items & Content -  how to position grid items and grid columns from left to right across the page.</li>
+            <li>Align Items & Content - how to position grid items from top to bottom.</li>
+          </ul>
+
+          <p>align-items is a property that positions grid items along the block, or column axis. This means that it positions items from top to bottom.</p>
+          <p>align-items accepts these values:</p>
+          <ul>
+            <li>start — aligns grid items to the top side of the grid area</li>
+            <li>end — aligns grid items to the bottom side of the grid area</li>
+            <li>center — aligns grid items to the center of the grid area</li>
+            <li>stretch — stretches all items to fill the grid area</li>
+          </ul>
+
+          <pre>
+&lt;main&gt;
+  &lt;div class="card"&gt;Card 1&lt;/div&gt;
+  &lt;div class="card"&gt;Card 2&lt;/div&gt;
+  &lt;div class="card"&gt;Card 3&lt;/div&gt;
+&lt;/main&gt;
+
+main {
+  display: grid;
+  grid-template-rows: repeat(3, 400px);
+  align-items: center;
+}
+          </pre>
+        </div>
+
+        <!-- Align Content -->
+        <div id="align_content">
+          <h2>Align Content</h2>
+          <p>align-items positions grid items within their rows. align-content positions the rows along the column axis, or from top to bottom.</p>
+          <p>It accepts these positional values:</p>
+          <ul>
+            <li>start — aligns the grid to the top of the grid container</li>
+            <li>end — aligns the grid to the bottom of the grid container</li>
+            <li>center — centers the grid vertically in the grid container</li>
+            <li>stretch — stretches the grid items to increase the size of the grid to expand vertically across the container</li>
+            <li>space-around — includes an equal amount of space on each side of a grid element, resulting in double the amount of space between elements as there is before the first and after the last element</li>
+            <li>space-between — includes an equal amount of space between grid items and no space at either end</li>
+            <li>space-evenly — places an even amount of space between grid items and at either end</li>
+          </ul>
+
+          <pre>
+main {
+  display: grid;
+  height: 600px;
+  rows: 200px 200px;
+  grid-template-areas: "top"
+                       "bottom";
+  align-content: center;
+}
+          </pre>
+        </div>
+
+        <!-- Justify Self and Align Self -->
+        <div id="justify_self_and_align_self">
+          <h2>Justify Self and Align Self</h2>
+          <p>The justify-items and align-items properties specify how all grid items contained within a single container will position themselves along the row and column axes, respectively.</p>
+          <p>justify-self specifies how an individual element should position itself with respect to the row axis. This property will override justify-items for any item on which it is declared.</p>
+          <p>align-self specifies how an individual element should position itself with respect to the column axis. This property will override align-items for any item on which it is declared.</p>
+          <p>They both accept these four properties:</p>
+          <ul>
+            <li>start — positions grid items on the left side/top of the grid area</li>
+            <li>end — positions grid items on the right side/bottom of the grid area</li>
+            <li>center — positions grid items on the center of the grid area</li>
+            <li>stretch — positions grid items to fill the grid area (default)</li>
+          </ul>
+        </div>
+
+        <!-- Implicit vs Explicit Grid -->
+        <div id="implicit_vs_explicit_grid">
+          <h2>Implicit vs Explicit Grid</h2>
+          <p>So far, we have been explicitly defining the dimensions and quantities of our grid elements using various properties. This works well in many cases, such as a landing page for a business that will display a specific amount of information at all times.
+
+However, there are instances in which we don’t know how much information we’re going to display. For example, consider online shopping. Often, these web pages include the option at the bottom of the search results to display a certain quantity of results or to display ALL results on a single page. When displaying all results, the web developer can’t know in advance how many elements will be in the search results each time.
+
+What happens if the developer has specified a 3-column, 5-row grid (for a total of 15 items), but the search results return 30?
+
+Something called the implicit grid takes over. The implicit grid is an algorithm built into the specification for CSS Grid that determines default behavior for the placement of elements when there are more than fit into the grid specified by the CSS.
+
+The default behavior of the implicit grid is as follows: items fill up rows first, adding new rows as necessary. New grid rows will only be tall enough to contain the content within them. In the next exercise, you’ll learn how to change this default behavior.</p>
+        </div>
+
+        <!-- Grid Auto Rows and Grid Auto Columns -->
+        <div id="grid_auto_rows_n_columns">
+          <h2>Grid Auto Rows and Grid Auto Columns</h2>
+          <p>CSS Grid provides two properties to specify the size of grid tracks added implicitly: grid-auto-rows and grid-auto-columns.</p>
+          <p>grid-auto-rows specifies the height of implicitly added grid rows. grid-auto-columns specifies the width of implicitly added grid columns.</p>
+          <p>grid-auto-rows and grid-auto-columns accept the same values as their explicit counterparts, grid-template-rows and grid-template-columns:</p>
+          <ul>
+            <li>pixels (px)</li>
+            <li>percentages (%)</li>
+            <li>fractions (fr)</li>
+            <li>the repeat() function</li>
+          </ul>
+
+          <pre>
+&lt;body&gt;
+  &lt;div&gt;Part 1&lt;/div&gt;
+  &lt;div&gt;Part 2&lt;/div&gt;
+  &lt;div&gt;Part 3&lt;/div&gt;
+  &lt;div&gt;Part 4&lt;/div&gt;
+  &lt;div&gt;Part 5&lt;/div&gt;
+&lt;/body&gt;
+
+body {
+  display: grid;
+  grid: repeat(2, 100px) / repeat(2, 150px);
+  grid-auto-rows: 50px;
+}
+          </pre>
+        </div>
+
+        <!-- Grid Auto Flow -->
+        <div id="grid_auto_flow">
+          <h2>Grid Auto Flow</h2>
+          <p>In addition to setting the dimensions of implicitly-added rows and columns, we can specify the order in which they are rendered.</p>
+          <p>grid-auto-flow specifies whether new elements should be added to rows or columns. It accepts these values:</p>
+          <ul>
+            <li>row — specifies the new elements should fill rows from left to right and create new rows when there are too many elements (default)</li>
+            <li>column — specifies the new elements should fill columns from top to bottom and create new columns when there are too many elements</li>
+            <li>dense — this keyword invokes an algorithm that attempts to fill holes earlier in the grid layout if smaller elements are added</li>
+          </ul>
+
+          <p>You can pair row and column with dense, like this: grid-auto-flow: row dense;. This property is declared on grid containers.</p>
+        </div>
+
+        <!-- Examples -->
+        <div id="examples">
+          <h1>Examples</h1>
+          <a href="./examples/CSS/css_1_TravelGuide/index.html">Travel Guide</a>
+          <a href="./examples/CSS/css_3_HealthyRecipes/index.html">Healthy Recipes</a>
+          <br>
+          <a href="./examples/CSS/css_2_SoccerArticle/index.html">Soccer Article</a>
+          <a href="./examples/CSS/css_4_PhotoPortfolio/index.html">Photography Portfolio</a>
+          <br>
+          <a href="./examples/CSS/css_5_LakeTahoe/index.html">Lake Tahoe</a>
+          <a href="./examples/CSS/css_6_MemoryGame/index.html">Meomory Game</a>
+          <a href="./examples/CSS/css_7_RestaurantWebsite/index.html">Restaurant Website</a>
+          <span>(Need to check one more time!)</span>
+          <br>
+          <a href="./examples/CSS/css_8_Survey/index.html">Survey</a>
+          <a href="./examples/CSS/css_9_Broadway/index.html">Broadway</a>
+          <br>
+          <a href="./examples/CSS/css_10_Coffee/index.html">Coffee</a>
+          <a href="./examples/CSS/css_11_ColorHSLA/index.html">Color - HSLA</a>
+          <a href="./examples/CSS/css_12_PaintStore/index.html">Paint Store</a>
+          <br>
+          <a href="./examples/CSS/css_13_Typography/index.html">Typography</a>
+          <a href="./examples/CSS/css_14_Morocco/index.html">Morroco</a>
+          <br>
+          <a href="./examples/CSS/css_15_Grid/index.html">Grid</a>
+          <a href="./examples/CSS/css_16_PupSpa/index.html">Pupspa</a>
+          <br>
+          <a href="./examples/CSS/css_17_GridTemplateAreas/index.html">Grid Template Areas</a>
+          <a href="./examples/CSS/css_18_OverlappingElements/index.html">Overlapping Elements</a>
+          <a href="./examples/CSS/css_19_Recipe/index.html">Savory Recipe</a>
+          <a href="./examples/CSS/css_20_TaskBoard/index.html">Task Board</a>
+          <a href="./examples/CSS/css_21_ArchitectureBlog/index.html">Architecture Blog</a>
+          <br>
+
+          <p>WIP: Paint Store, Task Board, Architecture Blog</p>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+          <p>&copy; TaeH0K1m 2019</p>
+      </footer>
+
+    </body>
+</html>

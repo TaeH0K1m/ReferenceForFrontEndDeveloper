@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Reference</title>
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+
+    </head>
+    <body>
+      <!-- Header -->
+      <header>
+          <nav class="navbar">
+              <!-- <span class="logo">Ref</span> -->
+              <ul>
+                  <li><a href="./index.html">HOME</a></li>
+                  <li><a href="./html_ref.html">HTML</a></li>
+                  <li><a href="./css_ref.html">CSS</a></li>
+                  <li><a href="#">JS</a></li>
+                  <li><a href="#">CONTACT</a></li>
+              </ul>
+          </nav>
+      </header>
+
+      <section class="index">
+        <div class="#">
+          <h1>HTML Reference</h1>
+          <ol>
+              <p>Elements and Structure</p>
+              <li><a href="#headings">Headings</a></li>
+              <li><a href="#displayText">Displaying Text</a></li>
+              <li><a href="#styleText">Styling Text</a></li>
+              <li><a href="#unorderedList">Unordered Lists</a></li>
+              <li><a href="#orderedList">Ordered Lists</a></li>
+              <li><a href="#linking">Linkin to Other Web Page</a></li>
+
+              <p>Tables</p>
+              <li><a href="#tables">Table</a></li>
+
+              <p>Forms</p>
+              <li><a href="#text_input">Text Input</a></li>
+              <li><a href="#password_input">Password Input</a></li>
+              <li><a href="#number_input">Number Input</a></li>
+              <li><a href="#range_input">Range Input</a></li>
+              <li><a href="#checkbox_input">Checkbox Input</a></li>
+              <li><a href="#radio_input">Radio Button Input</a></li>
+              <li><a href="#dropdown_input">Dropdown List Input</a></li>
+              <li><a href="#datalist_input">Datalist Input</a></li>
+              <li><a href="#textarea_input">Textarea Input</a></li>
+              <li><a href="#submit_form">Submit Form</a></li>
+
+              <p>Forms Validataion</p>
+              <li><a href="#">Requiring an Input</a></li>
+              <li><a href="#">Set a Minimum and Maximum</a></li>
+              <li><a href="#">Checking Text Length</a></li>
+              <li><a href="#">Matching a Pattern</a></li>
+
+              <br>
+              <li><a href="#examples">Examples</a></li>
+          </ol>
+        </div>
+      </section>
+
+      <main>
+
+        <!-- Elements and Structure -->
+        <h1>Elements and Structure</h1>
+
+        <!-- Introduction -->
+        <div id="introduction">
+          <h2>Introduction</h2>
+          <p><strong>HTML</strong>, HyperText Markup Language, is used to create the structure and content of a webpage. Most HTML elements contain opening and closing tags with raw text or other HTML tags between them. HTML elements can be nested inside other elements. The enclosed element is the child of the enclosing parent element.
+Any visible content should be placed within the opening and closing &lt;body&gt;tags .</p>
+
+          <strong>HTML Document Standards</strong>
+          <p>The &lt;!DOCTYPE html&gt; declaration should always be the first line of code in your HTML files. This lets the browser know what version of HTML to expect.</p>
+          <p>The &lt;html&gt; element will contain all of your HTML code.</p>
+          <p>Information about the web page, like the title, belongs within the &lt;head&gt; of the page.</p>
+        </div>
+
+        <!-- Headings -->
+        <div id="headings">
+            <h2>Headings</h2>
+            <p>Headings and sub-headings,  &lt;h1&gt; to &lt;h6&gt; tags, are used to enlarge text. </p>
+            <br>
+
+            <h1>This is h1 heading.</h1>
+            <p>&lt;h1&gt;This is h1 heading.&lt;/h1&gt;</p>
+            <h2>This is h2 heading.</h2>
+            <p>&lt;h2&gt;This is h2 heading.&lt;/h2&gt;</p>
+            <h3>This is h3 heading.</h3>
+            <p>&lt;h3&gt;This is h3 heading.&lt;/h3&gt;</p>
+            <h4>This is h4 heading.</h4>
+            <p>&lt;h4&gt;This is h4 heading.&lt;/h4&gt;</p>
+            <h5>This is h5 heading.</h5>
+            <p>&lt;h5&gt;This is h5 heading.&lt;/h5&gt;</p>
+            <h6>This is h6 heading.</h6>
+            <p>&lt;h6&gt;This is h6 heading.&lt;/h6&gt;</p>
+        </div>
+        <br>
+
+        <!-- Displaying Text -->
+        <div id="displayText">
+            <h2>Displaying Text</h2>
+            <p>&lt;p&gt;, &lt;span&gt; and &lt;div&gt; tags specify text or blocks.</p>
+            <br>
+
+            <p>This is text.</p>
+            <p>&lt;p&gt;This is text.&lt;/p&gt;</p>
+        </div>
+        <br>
+
+        <!-- Styling Text -->
+        <div id="styleText">
+            <h2>Styling Text</h2>
+            <p>The &lt;em&gt; and &lt;strong&gt; tags are used to emphasize text.</p>
+            <br>
+
+            <p>The &lt;em&gt; tag will generally render as <em>italic</em> emphasis.</p>
+            <p>&lt;p&gt;The em tag will generally render as &lt;em&gt;italic&lt;/em&gt; emphasis&lt;/p&gt;</p>
+
+            <p>The &lt;strong&gt; will generally render as <strong>bold</strong> emphasis.</p>
+            <p>&lt;p&gt;The strong will generally render as &lt;strong&gt;bold&lt;/strong&gt; emphasis.&lt;/p&gt;</p>
+        </div>
+        <br>
+
+        <!-- Unordered Lists -->
+        <div id="unorderedList">
+            <h2>Unordered Lists</h2>
+            <p>Ordered lists (&lt;ol&gt;) are numbered and unordered lists (&lt;ul&gt;) are bulleted.</p>
+            <br>
+
+            <ul>
+                <li>This is an item 1</li>
+                <li>This is an item 2</li>
+                <li>This is an item 3</li>
+            </ul>
+
+            <!-- unordered list code -->
+            <!--
+            <div>
+                <p>
+                    &lt;ul&gt;<br>
+                        &ltli&gt;item 1&lt;/li&gt;<br>
+                        &ltli&gt;item 2&lt;/li&gt;<br>
+                        &ltli&gt;item 3&lt;/li&gt;<br>
+                    &lt;/ul&gt;
+                </p>
+            </div>
+            -->
+            <pre>
+&lt;ul&gt;
+    &ltli&gt;This is an item 1&lt;/li&gt;
+    &ltli&gt;This is an item 2&lt;/li&gt;
+    &ltli&gt;This is an item 3&lt;/li&gt;
+&lt;/ul&gt;
+            </pre>
+        </div>
+
+        <!-- Ordered Lists -->
+        <div id="orderedList">
+            <h2>Ordered Lists</h2>
+
+            <ol>
+                <li>This is an item 1</li>
+                <li>This is an item 2</li>
+                <li>This is an item 3</li>
+            </ol>
+
+            <!-- ordered list code -->
+            <pre>
+&lt;ol&gt;
+    &ltli&gt;This is an item 1&lt;/li&gt;
+    &ltli&gt;This is an item 2&lt;/li&gt;
+    &ltli&gt;This is an item 3&lt;/li&gt;
+&lt;/ol&gt;
+            </pre>
+        </div>
+        <br>
+
+        <!-- Linking -->
+        <div id="linking">
+            <h2>Linking to Other Web Pages</h2>
+            <p>Anchor tags (&lt;a&gt;) are used to link to internal pages, external pages or content on the same page.</p>
+
+            <a href="#">This is a link to an example page</a>
+            <p>&lt;a href="#"&gt;This is a link to an example page&lt;/a&gt;</p>
+
+            <a href="#" target="_blank">Opening links in a new window</a>
+            <p>&lt;a href="#" target="_blank"&gt;Opening links in a new window&lt;/a&gt;</p>
+
+            <br>
+            <p>Images (&lt;img&gt;) and videos (&lt;video&gt;) can be added by linking to an existing source.</p>
+
+        </div>
+        <br>
+
+        <!-- Tables -->
+        <h1>Tables</h1>
+
+        <!-- Tables -->
+        <div id="tables">
+            <h2>Tables</h2>
+
+            <ol>
+              <li>The &lt;table&gt; element creates a table.</li>
+              <li>The &lt;tr&gt; element adds rows to a table.</li>
+              <li>To add data to a row, you can use the &lt;td&gt; element.</li>
+              <li>Table headings clarify the meaning of data. Headings are added with the &lt;th&gt;element.</li>
+              <li>Table data can span columns using the colspan attribute.</li>
+              <li>Table data can span rows using the rowspan attribute.</li>
+              <li>Tables can be split into three main sections: a head, a body, and a footer.</li>
+              <li>A table’s head is created with the &lt;thead&gt; element.</li>
+              <li>A table’s body is created with the &lt;tbody&gt; element.</li>
+              <li>A table’s footer is created with the &lt;tfoot&gt; element.</li>
+              <li>All the CSS properties you learned about in this course can be applied to tables and their data.</li>
+            </ol>
+        </div>
+
+        <!-- Forms -->
+        <h1>Forms</h1>
+        <p>The purpose of a &lt;form&gt; is to allow users to input information and send it.</p>
+        <p>Add a &lt;form&gt; element populated with various element that accept input on a web page</p>
+        <p>How a Form works</p>
+        <ul>
+          <li>Computers need an HTTP request to know how to communicate. The HTTP request instructs the receiving computer how to handle the incoming information.</li>
+          <li>Action attribute determines where the form’s information goes.</li>
+          <li>Method attribute determines how the information is sent and processed.</li>
+        </ul>
+
+        <!-- Text Input -->
+        <div id="text_input">
+            <h2>Text Input</h2>
+
+            <form action="/example.html" method="POST">
+                <label for="textInput">Text</label>
+                <input type="text" name="text_input" id="textInput">
+            </form>
+
+            <!-- text input code -->
+            <pre>
+&lt;form action="/example.html" method="POST"&gt;
+    &ltlabel for="textInput"&gt;Text&lt;/label&gt;
+    &ltinput type="text" name="text_input" id="textInput"&gt;
+&lt;/form&gt;
+            </pre>
+        </div>
+
+        <!-- Password Input -->
+        <div class="password_input">
+            <h2>Password Input</h2>
+            <form>
+                <label for="user-password">Password</label>
+                <input type="password" id="user-password" name="user-password">
+            </form>
+
+            <!-- password input code -->
+            <pre>
+&lt;form action="/example.html" method="POST"&gt;
+    &ltlabel for="user-password"&gt;Password&lt;/label&gt;
+    &ltinput type="password" id="user-password" name="user-password"&gt;
+&lt;/form&gt;
+            </pre>
+        </div>
+
+            <!-- Number Input -->
+            <div id="number_input">
+                <h2>Number Input</h2>
+                <form>
+                    <label for="number-input">Number</label>
+                    <input id="number-input" name="number-input" type="number" step="1">
+                </form>
+
+                <!-- number input code -->
+                <pre>
+&lt;form action="/example.html" method="POST"&gt;
+    &ltlabel for="number-input"&gt;Number&lt;/label&gt;
+    &ltinput id="number-input" name="number-input" type="number" step="1"&gt;
+&lt;/form&gt;
+                </pre>
+            </div>
+
+        <!-- Range Input -->
+        <div id="range_input">
+            <h2>Range Input</h2>
+
+            <form>
+                <label for="volume">Range Control</label>
+                <input id="volume" name="volume" type="range" min="0" max="100" step="1">
+            </form>
+
+            <!-- range input code -->
+            <pre>
+&lt;form action="/example.html" method="POST"&gt;
+    &ltlabel for="volume"&gt;Range Control&lt;/label&gt;
+    &ltinput id="volume" name="volume" type="range" min="0" max="100" step="1"&gt;
+&lt;/form&gt;
+            </pre>
+        </div>
+
+        <!-- Checkbox Input -->
+        <div id="checkbox_input">
+            <h2>Checkbox Input</h2>
+
+            <form>
+                <p>(multiple options) Please check all that apply: </p>
+                <label for="a">A</label>
+                <input id="a" name="multiplechoice" type="checkbox" value="a">
+                <br>
+                <label for="b">B</label>
+                <input id="b" name="multiplechoice" type="checkbox" value="b">
+                <br>
+                <label for="c">C</label>
+                <input id="c" name="multiplechoice" type="checkbox" value="c">
+            </form>
+
+            <!-- checkbox input code -->
+            <pre>
+&lt;form action="/example.html" method="POST"&gt;
+    &lt;p&gt;(multiple options) Please check all that apply: &lt;/p&gt;
+    &ltlabel for="a"&gt;A&lt;/label&gt;
+    &ltinput id="a" name="multiplechoice" type="checkbox" value="a"&gt;
+    &lt;br&gt;
+    &ltlabel for="b"&gt;B&lt;/label&gt;
+    &ltinput id="b" name="multiplechoice" type="checkbox" value="b"&gt;
+    &lt;br&gt;
+    &ltlabel for="c"&gt;C&lt;/label&gt;
+    &ltinput id="c" name="multiplechoice" type="checkbox" value="c"&gt;
+&lt;/form&gt;
+            </pre>
+        </div>
+
+        <!-- Radio Button Input -->
+        <div class="radio_input">
+            <h2>Radio Button Input</h2>
+
+            <form>
+                <p>(single choice) Choose one of the followings: </p>
+                <input type="radio" id="a" name="answer" value="a">
+                <label for="a">A</label>
+                <br>
+                <input type="radio" id="b" name="answer" value="b">
+                <label for="b">B</label>
+                <br>
+                <input type="radio" id="c" name="answer" value="c">
+                <label for="c">C</label>
+            </form>
+
+            <!-- radio button input code -->
+            <pre>
+&lt;form action="/example.html" method="POST"&gt;
+    &lt;p&gt;(single choice) Choose one of the followings: &lt;/p&gt;
+
+
+    &ltinput type="radio" id="a" name="answer" value="a"&gt;
+    &ltlabel for="a"&gt;A&lt;/label&gt;
+    &lt;br&gt;
+
+    &ltinput type="radio" id="b" name="answer" value="b"&gt;
+    &ltlabel for="b"&gt;B&lt;/label&gt;
+    &lt;br&gt;
+
+    &ltinput type="radio" id="c" name="answer" value="c"&gt;
+    &ltlabel for="c"&gt;C&lt;/label&gt;
+    &lt;br&gt;
+&lt;/form&gt;
+            </pre>
+        </div>
+
+        <!-- Dropdown List Input -->
+        <div id="dropdown_input">
+            <h2>Dropdown List Input</h2>
+
+            <form>
+                <label for="list">Dropdown list</label>
+                <select id="list" name="list">
+                    <option value="1">option 1</option>
+                    <option value="2">option 2</option>
+                    <option value="3">option 3</option>
+                </select>
+            </form>
+
+            <!-- dropdown list input code -->
+            <pre>
+&lt;form action="/example.html" method="POST"&gt;
+    &lt;label for="list"&gt;Dropdown list&lt;/label&gt;
+    &lt;select id="list" name="list"&gt;
+        &lt;option value="1"&gt;option 1&lt;/option&gt;
+        &lt;option value="2"&gt;option 2&lt/option&gt;
+        &lt;option value="3"&gt;option 3&lt/option&gt;
+    &lt;/select&gt;
+&lt;/form&gt;
+            </pre>
+        </div>
+
+        <!-- Datalist Input -->
+        <div id="datalist_input">
+            <h2>Datalist Input</h2>
+
+            <form>
+                <label for="option">Datalist</label>
+                <input type="text" list="options" id="option" name="option">
+
+                <datalist id="options">
+                    <option value="Option 1"></option>
+                    <option value="Option 2"></option>
+                    <option value="Option 3"></option>
+                </datalist>
+            </form>
+
+            <!-- Datalist input code -->
+            <pre>
+    &lt;form action="/example.html" method="POST"&gt;
+        &lt;label for="option"&gt;Datalist&lt;/label&gt;
+        &lt;input type="text" list="options" id="option" name="option"&gt;
+
+        &lt;datalist id="options"&gt;
+            &lt;option value="Option 1"&gt;&lt;/option&gt;
+            &lt;option value="Option 2"&gt;&lt;/option&gt;
+            &lt;option value="Option 3"&gt;&lt;/option&gt;
+        &lt;/datalist&gt;
+    &lt;/form&gt;
+            </pre>
+        </div>
+
+        <!-- Textarea Input -->
+        <div id="textarea_input">
+            <h2>Textarea Input</h2>
+
+            <form>
+                <label for="blog">Textarea (5 rows & 30 cols): </label>
+                <br>
+                <textarea id="blog" name="blog" rows="5" cols="30">Default text
+                </textarea>
+            </form>
+
+            <!-- Textarea input code -->
+            <pre>
+&lt;form action="/example.html" method="POST"&gt;
+    &lt;label for="blog"&gt;Textarea (5 rows & 30 cols): &lt;/label&gt;
+    &lt;br&gt;
+    &lt;textarea id="blog" name="blog" rows="5" cols="30"&gt;Default text
+    &lt;/textarea&gt;
+&lt;/form&gt;
+            </pre>
+        </div>
+
+        <!-- Submit Form -->
+        <div id="submit_form">
+            <h2>Submit Form</h2>
+
+            <form>
+                <input type="submit" value="Send">
+            </form>
+
+            <!-- submit form code -->
+            <pre>
+&lt;form action="/example.html" method="POST"&gt;
+    &lt;input type="submit" value="Send"&gt;
+&lt;/form&gt;
+            </pre>
+        </div>
+
+        <!-- Forms Validataion -->
+        <h1>Forms Validataion</h1>
+
+        <!-- Requiring an Input -->
+        <div id="requiring_input">
+            <h2>Requiring an Input</h2>
+
+            <form action="/example.html" method="POST">
+                <label for="requiring">Must be filled:</label>
+                <br>
+                <input id="requiring" name="requiring" type="text" required>
+                <input type="submit" value="Submit">
+            </form>
+
+            <!-- requiring an input code -->
+            <pre>
+&lt;form action="/example.html" method="POST"&gt;
+    &lt;label for="requiring"&gt;Must be filled:&lt;/label&gt;
+    &lt;br&gt;
+    &lt;input id="requiring" name="requiring" type="text" required&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+            </pre>
+
+        </div>
+
+        <!-- Set a Minimum and Maximum -->
+        <div id="set_minNmax">
+            <h2>Set a Minimum and Maximum</h2>
+
+            <form>
+                <label for="minmax">Enter # from 1 to 4:</label>
+                <input id="minmax" name="minmax" type="number" min="1" max="4">
+                <input type="submit" value="Submit">
+            </form>
+
+            <!-- set a min & max code -->
+            <pre>
+&lt;form action="/example.html" method="POST"&gt;
+    &lt;label for="minmax"&gt;Enter # from 1 to 4:&lt;/label&gt;
+    &lt;input id="minmax" name="minmax" type="number" min="1" max="4"&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+            </pre>
+
+        </div>
+
+        <!-- Checking Text Length -->
+        <div id="check_length">
+            <h2>Checking Text Length</h2>
+
+            <form action="/example.html" method="POST">
+                <label for="summary">Type in more than 5 and less than 250 characters: </label>
+                <input id="summary" name="summary" type="text" minlength="5" maxlength="250" required>
+                <input type="submit" value="Submit">
+            </form>
+
+            <!-- checking text length code -->
+            <pre>
+&lt;form action="/example.html" method="POST"&gt;
+    &lt;label for="summary"&gt;Type in more than 5 and less than 250 characters&lt;/label&gt;
+    &lt;input id="summary" name="summary" type="text" minlength="5" maxlength="250" required&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+            </pre>
+        </div>
+
+        <!-- Matching a Pattern -->
+        <div id="match_pattern">
+            <h2>Matching a Pattern</h2>
+
+            <form action="/example.html" method="POST">
+                <label for="payment">Enter number at least 14 digits and at most 16 digits:</label>
+                <br>
+                <input id="payment" name="payment" type="text" required pattern="[0-9]{14,16}">
+                <input type="submit" value="Submit">
+            </form>
+
+            <!-- matching a pattern code -->
+            <pre>
+&lt;form action="/example.html" method="POST"&gt;
+    &lt;label for="payment"&gt;Enter number at least 14 digits and at most 16 digits:&lt;/label&gt;
+    &lt;br&gt;
+    &lt;input id="payment" name="payment" type="text" required pattern="[0-9]{14,16}"&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+            </pre>
+        </div>
+
+
+        <!-- Examples -->
+        <div id="examples">
+            <h1>Examples</h1>
+            <a href="./examples/HTML/html_1_BrownBear.html">Brown Bear</a>
+            <a href="./examples/HTML/html_2_BrownBear.html">Brown Bear 2</a>
+            <br>
+            <a href="./examples//HTMLhtml_3_FashionBlog.html">Fashion Blog</a>
+            <br>
+            <a href="./examples/HTML/html_4_Ship.html">Ship To It</a>
+            <a href="./examples/HTML/html_5_WineFestival.html">Wine Festival Schedule</a>
+            <br>
+            <a href="./examples/HTML/html_6_BurgerOrder.html">Order Burger</a>
+            <br>
+            <a href="./examples/HTML/html_7_GussingGame/index.html">Guessing Game</a>
+            <a href="./examples/HTML/html_8_Login/index.html">Login Validation Page</a>
+            <a href="./examples/HTML/html_9_FormStory/index.html">Form a Story</a>
+            <br>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+          <p>&copy; TaeH0K1m 2019</p>
+      </footer>
+
+    </body>
+</html>

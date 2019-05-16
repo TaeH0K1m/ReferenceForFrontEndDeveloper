@@ -1,0 +1,209 @@
+/* Index page */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333333;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+}
+
+.logo {
+  color: #fff;
+}
+
+.navbar li {
+  display: inline-block;
+  width: 150px;
+}
+
+.navbar li a {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+main {
+  position: relative;
+  top: 50px;
+  padding-bottom: 70px;
+}
+
+.firstpage {
+  text-align: center;
+}
+
+.firstpage h1 {
+  color: #333;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+  margin-top: 0px;
+  padding-top: 100px;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+}
+
+.jumbotron {
+  height: 500px;
+  background-image: url(images/bg-image.png);
+  background-size: cover;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.btn-main {
+  background-color: #333;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1.3px;
+  padding: 16px 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.contents{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.contents .col {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin-top: 50px;
+}
+
+.contents img {
+  height: 150px;
+}
+
+.contents h2 {
+  font-weight: 600;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+
+.contents a {
+  background-color: white;
+  color: #333333;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1.3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #333333;
+}
+
+footer {
+  background-color: #333333;
+  color: #fff;
+  padding: 10px;
+}
+
+footer p {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-size: 11px;
+}
+
+
+/* HTML Reference */
+.index {
+  position: relative;
+  top: 50px;
+}
+
+
+/* CSS Reference */
+.box_example p {
+  margin: 0;
+  padding: 0;
+}
+
+.margin {
+  background-color: #edc48b;
+  width: 500px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.border {
+  background-color: #ffde91;
+  margin: 0 auto;
+  width: 400px;
+  padding: 5px;
+}
+
+.padding {
+  background-color: #9ac468;
+  margin: 0 auto;
+  width: 200px;
+  padding: 5px;
+}
+
+.content {
+  background-color: #7bb1c6;
+  margin: 0 auto;
+  width: 150px;
+}
+
+/* CSS Position */
+.boxes {
+  width: 120px;
+  height: 70px;
+}
+
+.a {
+  background-color: #466995;
+}
+
+.b {
+  background-color: DeepSkyBlue;
+}
+
+.c {
+  background-color: DeepSkyBlue;
+  position: relative;
+  top: 20px;
+  left: 50px;
+}
+
+.d {
+  background-color: DeepSkyBlue;
+  position: absolute;
+  top: 10550px;
+  left: 50px;
+}
+
+.e {
+  background-color: DeepSkyBlue;
+  float: right;
+}
+
+/* Inline-Block Display */
+.rectangle {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  border: 1px solid red;
+}
